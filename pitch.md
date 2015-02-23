@@ -61,8 +61,8 @@ Advantages
 
 - This application is published in https://mapologo.shinyapps.io/dp_mapologo
 
-- Is a small demonstration to show the power and flexibility to generate data
-directly from the data. Reproducible Public Data.
+- Is a small demonstration to show the power and flexibility to generate dynamic
+reports directly from the data. Reproducible Public Data.
 
 - Instead of offering cumbersome and impractical Excel files, Shiny applications
 allow to display information in an attractive and dynamic format, much more
