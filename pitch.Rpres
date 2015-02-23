@@ -6,27 +6,26 @@ date: 22/02/2015
 Data
 ========================================================
 
-- Data is taken from Venezuelan Statistics National Institute (INE)
-
-- From "Indice de Precios al Consumidor" (Consumer Price Index, CPI) page: 
+- Data is taken from Venezuelan Statistics National Institute (INE), *Indice de
+Precios al Consumidor* (Consumer Price Index, CPI) page: 
 
 http://www.ine.gob.ve/index.php?option=com_content&view=category&id=108&Itemid=62
 
-- Select "INPC POR CIUDADES" (National CPI per city)
-
-- and then "Por grupo según dominio de estudio, 2008 - Mayo 2014" (By group according to study domain, 2008 - May 2014).
+- Select "INPC POR CIUDADES" (National CPI per city) and then select *Por grupo
+según dominio de estudio, 2008 - Mayo 2014* (By group according to study domain,
+2008 - May 2014):
 
 http://www.ine.gob.ve/documentos/Economia/IndicedePreciosalconsumidor/xls/PorCiudades/4_6_3.xls
 
 Data Processing
 ========================================================
 
-- Data is a Microsoft Excel File with 75 sheets, each one containing IPC data
-in 10 largest Venezuela cities for 13 "domains" (food, alcoholic beverages,
-clothing, rental housing, ...) from jan 2008 to may 2014.
+- Data is a Microsoft Excel File with 75 sheets, each one containing monthly IPC
+data from jan 2008 to may 2014 in 10 largest Venezuela cities for 13 "domains"
+(food, alcoholic beverages, clothing, rental housing, ...).
 
 - Loading data it is quite tricky because this spreadsheet is edited by hand, so
-there are little and annoying differences on data format. See `read_data.R` in https://github.com/map0logo/devdataprod-011 repo.
+there are little and annoying differences on data location. See `read_data.R` in https://github.com/map0logo/devdataprod-011 repo for details.
 
 ```{r}
 load("data.Rdata")
