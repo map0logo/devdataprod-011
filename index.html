@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="" lang="en"><head>
+<html class="section" lang="en"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
   <title>Venezuelan Consumer Price Index Reproducible Plots</title>
@@ -780,9 +780,9 @@ hljs.initHighlightingOnLoad();
 
 <body>
   <div data-transition-speed="default" class="reveal linear">
-  <div style="width: 960px; height: 700px; transform: translate(-50%, -50%) scale(0.822857) translate(50%, 50%);" class="slides">
+  <div style="width: 960px; height: 700px; transform: translate(-50%, -50%) scale(0.783) translate(50%, 50%);" class="slides">
 
-<section class="past" style="display: block;" data-state="section" data-transition="linear" data-transition-speed="default">
+<section class="present" style="display: block;" data-state="section" data-transition="linear" data-transition-speed="default">
 <h1>Venezuelan Consumer Price Index Reproducible Plots</h1><p>Francisco Palm (map0logo)<br>22/02/2015</p>
 
 <div class="slideContent">
@@ -790,19 +790,20 @@ hljs.initHighlightingOnLoad();
 </div>
 
 </section>
-<section class="past" style="display: block;" data-transition="linear" data-transition-speed="default">
+<section class="future" style="display: block;" data-transition="linear" data-transition-speed="default">
 <h3>Data</h3>
 <div class="slideContent">
 <ul>
-<li><p>Data is taken from Venezuelan Statistics National Institute (INE)</p></li>
-<li><p>From “Indice de Precios al Consumidor” (Consumer Price Index, CPI) page: </p></li>
+<li>Data is taken from Venezuelan Statistics National Institute (INE), <em>Indice de
+Precios al Consumidor</em> (Consumer Price Index, CPI) page: </li>
 </ul>
 
 <p><a href="http://www.ine.gob.ve/index.php?option=com_content&amp;view=category&amp;id=108&amp;Itemid=62">http://www.ine.gob.ve/index.php?option=com_content&amp;view=category&amp;id=108&amp;Itemid=62</a></p>
 
 <ul>
-<li><p>Select “INPC POR CIUDADES” (National CPI per city)</p></li>
-<li><p>and then “Por grupo según dominio de estudio, 2008 - Mayo 2014” (By group according to study domain, 2008 - May 2014).</p></li>
+<li>Select “INPC POR CIUDADES” (National CPI per city) and then select <em>Por grupo
+según dominio de estudio, 2008 - Mayo 2014</em> (By group according to study domain,
+2008 - May 2014):</li>
 </ul>
 
 <p><a href="http://www.ine.gob.ve/documentos/Economia/IndicedePreciosalconsumidor/xls/PorCiudades/4_6_3.xls">http://www.ine.gob.ve/documentos/Economia/IndicedePreciosalconsumidor/xls/PorCiudades/4_6_3.xls</a></p>
@@ -810,15 +811,15 @@ hljs.initHighlightingOnLoad();
 </div>
 
 </section>
-<section class="past" style="display: block;" data-transition="linear" data-transition-speed="default">
+<section class="future" style="display: block;" data-transition="linear" data-transition-speed="default">
 <h3>Data Processing</h3>
 <div class="slideContent">
 <ul>
-<li><p>Data is a Microsoft Excel File with 75 sheets, each one containing IPC data
-in 10 largest Venezuela cities for 13 “domains” (food, alcoholic beverages,
-clothing, rental housing, …) from jan 2008 to may 2014.</p></li>
+<li><p>Data is a Microsoft Excel File with 75 sheets, each one containing monthly IPC
+data from jan 2008 to may 2014 in 10 largest Venezuela cities for 13 “domains”
+(food, alcoholic beverages, clothing, rental housing, …).</p></li>
 <li><p>Loading data it is quite tricky because this spreadsheet is edited by hand, so
-there are little and annoying differences on data format. See <code>read_data.R</code> in <a href="https://github.com/map0logo/devdataprod-011">https://github.com/map0logo/devdataprod-011</a> repo.</p></li>
+there are little and annoying differences on data location. See <code>read_data.R</code> in <a href="https://github.com/map0logo/devdataprod-011">https://github.com/map0logo/devdataprod-011</a> repo for details.</p></li>
 </ul>
 
 <pre><code class="r"><span class="identifier">load</span><span class="paren">(</span><span class="string">"data.Rdata"</span><span class="paren">)</span>
@@ -832,7 +833,7 @@ there are little and annoying differences on data format. See <code>read_data.R<
 </div>
 
 </section>
-<section class="past" style="display: block;" data-transition="linear" data-transition-speed="default">
+<section class="future" style="display: block;" data-transition="linear" data-transition-speed="default">
 <h3>Interface Design</h3>
 <div class="slideContent">
 <p>The interface has a <code>sidebarPanel</code>:</p>
@@ -851,7 +852,7 @@ selected date range for selected Cities faceted by domains.</p>
 </div>
 
 </section>
-<section class="past" style="display: block;" data-transition="linear" data-transition-speed="default">
+<section class="future" style="display: block;" data-transition="linear" data-transition-speed="default">
 <h3>Application Output</h3>
 <div class="mediaInline slideContent">
 <p>Here we have an screenshot of this app:</p>
@@ -861,7 +862,7 @@ selected date range for selected Cities faceted by domains.</p>
 </div>
 
 </section>
-<section class="present" style="display: block;" data-transition="linear" data-transition-speed="default">
+<section class="future" style="display: block;" data-transition="linear" data-transition-speed="default">
 <h3>Advantages</h3>
 <div class="slideContent">
 <ul>
@@ -880,7 +881,7 @@ informed decision making.</p></li>
 
 
   </div>
-  <div style="display: block;" class="progress"><span style="width: 1364px;"></span></div><aside style="display: block;" class="controls"><div class="navigate-left enabled"></div><div class="navigate-right"></div><div class="navigate-up"></div><div class="navigate-down"></div></aside><div class="state-background"></div><div class="pause-overlay"></div></div>
+  <div style="display: block;" class="progress"><span style="width: 0px;"></span></div><aside style="display: block;" class="controls"><div class="navigate-left"></div><div class="navigate-right enabled"></div><div class="navigate-up"></div><div class="navigate-down"></div></aside><div class="state-background"></div><div class="pause-overlay"></div></div>
 
   <script type="text/javascript">
 /**
