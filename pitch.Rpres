@@ -31,7 +31,7 @@ there are little and annoying differences on data location. See `read_data.R` in
 load("data.Rdata")
 ```
 
-- We get a resulting data frame `data` with:`r nrow(data)` observations and
+- We get a resulting data frame `data` with: `r nrow(data)` observations and
 `r ncol(data)` variables.
 
 Interface Design

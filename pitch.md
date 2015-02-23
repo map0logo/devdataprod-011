@@ -32,7 +32,7 @@ there are little and annoying differences on data location. See `read_data.R` in
 load("data.Rdata")
 ```
 
-- We get a resulting data frame `data` with:1050 observations and
+- We get a resulting data frame `data` with: 1050 observations and
 14 variables.
 
 Interface Design
